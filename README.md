@@ -3,15 +3,26 @@ Electricity-Billing-System-in-Java
 DATABASE QUERYS IN MYDQL RUN 
 
 
-create database hms;
-use hms;
-create table login(username varchar(40),password varchar(40));
-insert into login values('rishab','rishab1507');
-create table customer (id varchar(30),number varchar(30),name varchar(30),gender varchar(30),country varchar(30),room_number varchar(30),status varchar(30),deposit varchar(30));
+create database ebs;
+create table login(meter_no varchar(20), username varchar(30), name varchar(30), password varchar(30), user varchar(30));
 
-create table room(room_number varchar(20),availability varchar(20),clean_status varchar(20), price varchar(20),bed_type varchar(30));
-create table employee(name varchar(30), age varchar(10),gender varchar(30),job varchar(30),salary varchar(30),phone varchar(30),aadhar int(30),email varchar(40));
-create table driver(name varchar(30),age int(10),gender varchar(10), location varchar(50));
+
+
+create table customer(name varchar(30), meter varchar(20), address varchar(50), city varchar(20), state varchar(30), email varchar(30), phone varchar(20));
+
+
+
+create table meter_info(meter_number varchar(20), meter_location varchar(20), meter_type varchar(20), phase_code varchar(20), bill_type varchar(20), days varchar(20));
+
+
+
+create table tax(cost_per_unit varchar(20), meter_rent varchar(20), service_charge varchar(20), service_tax varchar(20), swacch_bharat_cess varchar(20), fixed_tax varchar(20));
+
+
+
+insert into tax values('9', '47','22','57','6','18');
+
+
 
 
 PROJECT VIEWS 
