@@ -3,7 +3,7 @@ Electricity-Billing-System-in-Java
 
 
 
-DATABASE QUERYS IN MYDQL RUN 
+DATABASE QUERYS RUN IN MYSQL 
 
 
 create database ebs;
